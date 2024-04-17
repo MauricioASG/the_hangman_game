@@ -1,0 +1,19 @@
+/* welcome.css */
+
+.wrapper {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+img {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
