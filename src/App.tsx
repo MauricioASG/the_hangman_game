@@ -1,5 +1,6 @@
 // App.tsx
-import React, { useState } from 'react';
+import { useState } from 'react'; // Solo necesitas importar useState aquí
+
 import Hangman from './components/Hangman';
 import Welcome from './components/Welcome';
 
@@ -12,10 +13,14 @@ function App() {
     setShowGame(true);
   };
 
+  const handleBackClick = () => {
+    setShowGame(false);
+  };
+
   return (
     <div>
       {showGame ? (
-        <Hangman words={words} />
+        <Hangman words={words} onBackClick={handleBackClick} /> // Pasar la función onBackClick
       ) : (
         <Welcome onPlayClick={handlePlayClick} />
       )}

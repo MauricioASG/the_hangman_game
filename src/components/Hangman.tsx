@@ -1,12 +1,13 @@
 // Hangman.tsx
-import React, { useState } from "react";
+import { useState } from "react";
 import "../css/Hangman.css";
 
 interface HangmanProps {
   words: string[];
+  onBackClick: () => void; // Nueva prop para manejar el evento de clic en "Back"
 }
 
-const Hangman = ({ words }: HangmanProps) => {
+const Hangman = ({ words, onBackClick }: HangmanProps) => {
   // Almacena la palabra que va a tener que adivinar el juego
   const [selectedWord, setSelectedWord] = useState(words[0]);
   // Array vacío donde nosotros tendremos que estar poniendo las letras que vayamos adivinando
@@ -52,12 +53,14 @@ const Hangman = ({ words }: HangmanProps) => {
             setSelectedWord(words[Math.floor(Math.random() * words.length)]);
           }}
         >
-          {" "}
           Select New Word
         </button>
       )}
       <p>Cantidad de errores {errorCount}</p>
       {displayWord.join("") === selectedWord && <p>You win this round</p>}
+      
+      {/* Botón "Back" */}
+      <button className="back-button" onClick={onBackClick}>Back</button>
     </div>
   );
 };
