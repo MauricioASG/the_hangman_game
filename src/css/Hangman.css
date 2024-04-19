@@ -1,0 +1,52 @@
+/* Hangman.css */
+
+.hangman-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hangman-word {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.letter {
+  margin-right: 5px;
+}
+
+.hangman-input {
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.hangman-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hangman-button {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hangman-button:hover {
+  background-color: #0056b3;
+}
+
+.hangman-error {
+  margin-bottom: 10px;
+}
+
+.hangman-message {
+  font-weight: bold;
+  color: green;
+}
