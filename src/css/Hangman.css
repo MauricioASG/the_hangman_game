@@ -6,10 +6,17 @@
   align-items: center;
 }
 
+/* Hangman.css */
+
 .hangman-word {
-  font-size: 24px;
+  font-size: 28px;
+  font-family: 'Arial', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agregar sombra al texto */
+  color: #ff5733; /* Cambiar color del texto a naranja brillante */
   margin-bottom: 20px;
 }
+
+
 
 .letter {
   margin-right: 5px;
@@ -51,7 +58,6 @@
   color: green;
 }
 
-
 .back-button {
   background-color: #bc1d6d;
   border: none;
@@ -70,3 +76,4 @@
 .back-button:hover {
   background-color: #042537;
 }
+
