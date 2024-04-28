@@ -1,79 +1,26 @@
 /* Hangman.css */
 
-.hangman-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Hangman.css */
-
-.hangman-word {
-  font-size: 28px;
-  font-family: 'Arial', sans-serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agregar sombra al texto */
-  color: #ff5733; /* Cambiar color del texto a naranja brillante */
-  margin-bottom: 20px;
-}
-
-
-
-.letter {
-  margin-right: 5px;
-}
-
-.hangman-input {
-  margin-bottom: 20px;
-  padding: 5px;
-  font-size: 16px;
-}
-
-.hangman-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.hangman-button {
-  padding: 10px 20px;
-  margin-bottom: 10px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.hangman-button:hover {
-  background-color: #0056b3;
-}
-
-.hangman-error {
-  margin-bottom: 10px;
-}
-
-.hangman-message {
-  font-weight: bold;
-  color: green;
-}
-
-.back-button {
-  background-color: #bc1d6d;
-  border: none;
-  color: white;
-  padding: 10px 17px;
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 20px;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: background-color 0.3s;
 }
 
-.back-button:hover {
-  background-color: #042537;
+/* Estilos para el reloj */
+.clock {
+  font-size: 20px;
+  margin-top: 10px;
 }
+
+/* Estilos adicionales para otros elementos relacionados con el tiempo */
+.time-info {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+}
+
+
+
 
